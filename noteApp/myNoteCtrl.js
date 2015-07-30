@@ -40,7 +40,7 @@ myNoteApp.controller("myNoteCtrl", function($scope) {
 		return id==$scope.editID;
 	}
 	$scope.deleteAll = function() {
-		$scope.confirm = confirm("Are your sure?");
+		$scope.confirm = confirm("Are you sure?");
 		if($scope.confirm)
 			$scope.prev.length = 0;
 		localStorage.setItem('myNotes', JSON.stringify($scope.prev));
